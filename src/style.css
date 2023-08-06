@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+button {
+  padding: 5px 15px;
+  border: 0px;
+  border-radius: 5px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px 10px;
+  outline: 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+li p {
+  flex: 1;
+}
+li .todo.done {
+  background: #333;
+}
+li .todo {
+  border: 2px solid #333;
+  flex: 0 0 20px;
+  height: 20px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+li:hover {
+  padding: 10px 0px 10px 5px;
+  background: lightblue;
+  border-radius: 5px;
+}
+
+button.danger {
+  background: #eb2f06;
+}
+
+button.primary {
+  background: #4a69bd;
+}
+
+button.success {
+  background: #2ed573;
+}
